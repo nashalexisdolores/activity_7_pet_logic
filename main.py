@@ -7,4 +7,7 @@ class pet_app:
         self.root.title("Pet Registry v1.0")
         self.root.geometry("400x500")
 
-        
+    def __init__(self, root):
+        self.root = root
+        self.my_pet = pet_logic()
+        self.setup_ui()
