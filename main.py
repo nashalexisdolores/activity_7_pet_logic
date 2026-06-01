@@ -48,3 +48,8 @@ class pet_app:
         self.display_card.config(bg="#1f1f1f", fg="gold", font=("Courier", 12, "bold"))
 
         self.btn_reg.config(bg="gold", fg="black", relief="flat", font=("Arial", 10, "bold"))
+
+if __name__ == "__main__":
+    root_window = tk.Tk()
+    app_instance = pet_app(root_window)
+    root_window.mainloop()
