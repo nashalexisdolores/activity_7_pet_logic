@@ -27,3 +27,6 @@ class pet_app:
 
         self.btn_reg = tk.Button(self.root, text="REGISTER PET", command=self.handle_reg)
         self.btn_reg.pack(pady=20)
+
+        self.display_card = tk.Label(self.root, text="Waiting for entry...", font=("Arial", 10))
+        self.display_card.pack(pady=20)
