@@ -36,3 +36,10 @@ class pet_app:
         self.my_pet.set_animal_type(self.entry_type.get())
         self.my_pet.set_age(self.entry_age.get())
         self.update_id_card()
+
+    def update_id_card(self):
+        name = self.my_pet.get_name()
+        species = self.my_pet.get_animal_type()
+        age = self.my_pet.get_age()
+        
+        self.display_card.config(text=f"PET ID\n------\nNAME: {name}\nTYPE: {species}\nAGE: {age}")
