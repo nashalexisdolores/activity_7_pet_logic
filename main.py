@@ -20,3 +20,10 @@ class pet_app:
         tk.Label(self.root, text="ANIMAL TYPE (Dog, Cat, etc):").pack(pady=5)
         self.entry_type = tk.Entry(self.root)
         self.entry_type.pack()
+
+        tk.Label(self.root, text="PET AGE:").pack(pady=5)
+        self.entry_age = tk.Entry(self.root)
+        self.entry_age.pack()
+
+        self.btn_reg = tk.Button(self.root, text="REGISTER PET", command=self.handle_reg)
+        self.btn_reg.pack(pady=20)
