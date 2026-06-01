@@ -43,3 +43,6 @@ class pet_app:
         age = self.my_pet.get_age()
         
         self.display_card.config(text=f"PET ID\n------\nNAME: {name}\nTYPE: {species}\nAGE: {age}")
+
+        self.root.configure(bg="#121212")
+        self.display_card.config(bg="#1f1f1f", fg="gold", font=("Courier", 12, "bold"))
