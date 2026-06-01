@@ -30,3 +30,9 @@ class pet_app:
 
         self.display_card = tk.Label(self.root, text="Waiting for entry...", font=("Arial", 10))
         self.display_card.pack(pady=20)
+
+    def handle_reg(self):
+        self.my_pet.set_name(self.entry_name.get())
+        self.my_pet.set_animal_type(self.entry_type.get())
+        self.my_pet.set_age(self.entry_age.get())
+        self.update_id_card()
