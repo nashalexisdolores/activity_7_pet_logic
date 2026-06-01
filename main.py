@@ -46,3 +46,5 @@ class pet_app:
 
         self.root.configure(bg="#121212")
         self.display_card.config(bg="#1f1f1f", fg="gold", font=("Courier", 12, "bold"))
+
+        self.btn_reg.config(bg="gold", fg="black", relief="flat", font=("Arial", 10, "bold"))
